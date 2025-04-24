@@ -46,18 +46,9 @@ This project is a secure learning platform designed specifically for coaching in
 - Admin-only access to modify or delete data.
 - Encrypted video streaming to protect intellectual property.
 
----
-
-## 📱 Platforms
-
-- Available as a **mobile app** (Android/iOS) or **web-based** portal.
-- Mobile-friendly and optimized for easy navigation.
-
----
-
 ## 🛠️ Tech Stack (example)
 
-- **Frontend:**  React Native , React.js
-- **Backend:** Node.js , TypeScript
+- **Frontend:**  React Native, React.js
+- **Backend:** Node.js, TypeScript, Express
 - **Database**: MongoDB 
 
