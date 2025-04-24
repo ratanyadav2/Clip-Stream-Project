@@ -32,18 +32,24 @@ export function UserLogin(){
     })
 
     return(
-        <div>
-            <h3>User Login</h3>
+        <div className="d-flex justify-content-center p-5"  style={{
+            backgroundImage:"url('/public/loginbg.avif')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            minHeight: '89vh',
+            padding: '1rem'
+            }}>
+            
             <form onSubmit={formik.handleSubmit}>
-                <dl>
-                    <dt>User Id</dt>
-                    <dd><input type="text" onChange={formik.handleChange} name="userid" /></dd>
-                    <dt>Password</dt>
-                    <dd><input type="password" onChange={formik.handleChange} name="password"/></dd>
+                <dl >
+                    <dt className="text-white">User Id</dt>
+                    <dd><input type="text" onChange={formik.handleChange} name="userid"  className="form-control"/></dd>
+                    <dt className="text-white">Password</dt>
+                    <dd><input type="password" onChange={formik.handleChange} name="password"  className="form-control"/></dd>
                 </dl>
-                <button type="submit" className="btn btn-success mx-3">Login</button>
-                <div className="my-2">
-                <Link  to="/register-user" className="btn btn-warning">New User Register</Link>
+                <div className="input-group">
+                    <button type="submit" className="btn btn-success mx-3">Login</button>
+                    <Link  to="/register-user" className="btn btn-warning">Register</Link>
                 </div>
                 
             </form>

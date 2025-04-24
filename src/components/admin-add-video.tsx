@@ -43,7 +43,7 @@ export function AdminAddVideo(){
 
     return(
         <div>
-            <h3> Add Videos </h3>
+            <h3 className=" d-flex p-4 justify-content-center"> Add Videos </h3>
             <form onSubmit={formik.handleSubmit} >
             <dl className="row">
                 <dt className="col-3">Video Id</dt>

@@ -24,9 +24,10 @@ export function AdminDashboard(){
         navigate('/admin-login');
     }
 
+
     return(
         <div>
-            <h3 className="d-flex  mt-4 justify-content-between"><span>Admin Dashboard</span><span>{cookies['admin_id']} </span><button onClick={SignOut} className="btn btn-danger">SignOut</button></h3>
+            <h3 className="d-flex  mt-4 justify-content-between"><span>Admin Dashboard</span><span>Hi {cookies['admin_id'].toUpperCase()} </span><button onClick={SignOut} className="btn btn-danger">SignOut</button></h3>
             <div>
                 <Link to='/add-video' className="btn btn-primary bi bi-camera-video" >Add Video</Link>
             </div>

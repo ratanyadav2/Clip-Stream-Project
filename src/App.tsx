@@ -11,11 +11,36 @@ import { AdminDeleteVideo } from './components/admin-delete-video'
 
 function App() {
   return (
-    <div className='container-fluid'>
+    <div className='container-fluid '>
       <BrowserRouter>
         <header>
-          <h2 className='text-center'><Link to='/' className='btn btn-light'><span>Clip Stream</span></Link></h2>
+        <h2 className="text-center my-4">
+  <Link to="/" className="text-decoration-none">
+    <span style={{
+      background: "linear-gradient(90deg, #ff416c, #ff4b2b)",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+      fontWeight: "800",
+      fontSize: "2.5rem",
+      letterSpacing: "1.5px",
+      textShadow: "2px 2px 6px rgba(0,0,0,0.3)"
+    }}>
+      🎥 Clip Stream
+    </span>
+  </Link>
+</h2>
+
+
         </header>
+        {/* <nav className='d-flex justify-content-between my-3'>
+          <h2 className='text-primary '><Link to='/' className='text-decoration-none'>ClipStream</Link></h2>
+          <div className="w-50">
+                <div className="input-group">
+                    <input type="text" className="form-control" placeholder="Search" /> <button className="bi bi-search btn btn-warning"></button>
+                 </div>
+            </div>
+          <div><Link to="/register-user" className='text-decoration-none text-dark'>SignIn</Link></div>
+        </nav> */}
         <section>
           <Routes>
             <Route path='/' element={<VideoHome/>}/>

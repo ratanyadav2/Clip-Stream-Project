@@ -2,6 +2,7 @@ import { useFormik } from "formik";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
+import { Link } from "react-router-dom";
 
 export function AdminLogin(){
 
@@ -33,8 +34,14 @@ export function AdminLogin(){
     })
 
     return(
-        <div className=" w-50 p-4 container-fluid justify-content-center d-flex">
-            <h5>Admin Login</h5><br/>
+        <div className="container-fluid justify-content-center d-flex" style={{
+            backgroundImage:"url('/public/adminbg.jpg')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            minHeight: '85vh',
+            padding: '2rem'
+            }}>
+            
             <form onSubmit={formik.handleSubmit}>
                 <dl>
                     <dt>Admin Id</dt>
@@ -42,7 +49,8 @@ export function AdminLogin(){
                     <dt>Password</dt>
                     <dd><input type="text" onChange={formik.handleChange} name="password"  className="form-control"/></dd>
                 </dl>
-                <button type="submit" className="btn btn-warning">Submit</button>
+                <button type="submit" className="btn btn-warning mx-3">Submit</button>
+                <Link to='/' className="btn btn-danger">Cancel</Link>
             </form>
         </div>
     )

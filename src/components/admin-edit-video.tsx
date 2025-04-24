@@ -48,9 +48,9 @@ export function AdminEditVideo(){
     })
     return(
         <div>
-            <h3>Admin Edit Video</h3>
+            <h3 className="d-flex mt-4 mb-5 justify-content-center">Admin Edit Video</h3>
             <form onSubmit={formik.handleSubmit} >
-                <dl className="row">
+                <dl className="row m-lg-4">
                     <dt className="col-3">Video Id</dt>
                     <dd className="col-9"><input value={formik.values.video_id} onChange={formik.handleChange} type="number" name="video_id" /></dd>
                     <dt className="col-3">Title</dt>
@@ -75,9 +75,9 @@ export function AdminEditVideo(){
                         </select>
                     </dd>
                 </dl>
-                <button type="submit" className="btn btn-success">Save Video</button>
+                <button type="submit" className="btn btn-success mx-lg-3">Save Video</button>
             </form>
-            <Link to='/admin-dash' className="btn btn-warning">Cancel</Link>
+            <Link to='/admin-dash' className="btn btn-warning mt-4">Cancel</Link>
         </div>
     )
 }
