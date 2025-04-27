@@ -17,16 +17,17 @@ function App() {
         <h2 className="text-center my-4">
   <Link to="/" className="text-decoration-none">
     <span style={{
-      background: "linear-gradient(90deg, #ff416c, #ff4b2b)",
-      WebkitBackgroundClip: "text",
-      WebkitTextFillColor: "transparent",
-      fontWeight: "800",
-      fontSize: "2.5rem",
-      letterSpacing: "1.5px",
-      textShadow: "2px 2px 6px rgba(0,0,0,0.3)"
-    }}>
-      🎥 Clip Stream
-    </span>
+    background: "linear-gradient(90deg, #6a11cb 0%, #2575fc 100%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    fontWeight: "800",
+    fontSize: "2.5rem",
+    letterSpacing: "1.5px",
+    textShadow: "2px 2px 8px rgba(0,0,0,0.4)"
+  }}
+>
+  🎓 EduNex Academy
+</span>
   </Link>
 </h2>
 

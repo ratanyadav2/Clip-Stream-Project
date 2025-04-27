@@ -47,7 +47,7 @@ export function AdminLogin(){
                     <dt>Admin Id</dt>
                     <dd><input type="text" onChange={formik.handleChange} name="admin_id" className="form-control" /></dd>
                     <dt>Password</dt>
-                    <dd><input type="text" onChange={formik.handleChange} name="password"  className="form-control"/></dd>
+                    <dd><input type="password" onChange={formik.handleChange} name="password"  className="form-control"/></dd>
                 </dl>
                 <button type="submit" className="btn btn-warning mx-3">Submit</button>
                 <Link to='/' className="btn btn-danger">Cancel</Link>
