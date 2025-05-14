@@ -1,4 +1,4 @@
-- # 📘 Coaching Institute Learning App
+- # 📘 Edu-Academy Learning App
 
 This project is a secure learning platform designed specifically for coaching institutes to provide educational video content and interview preparation material exclusively to their registered students. The app includes a robust admin panel for content management and a student interface for accessing course materials.
 
